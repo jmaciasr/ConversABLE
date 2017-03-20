@@ -1,0 +1,45 @@
+button {
+	cursor: pointer; 
+	border: none;
+	background-color: #28a89e;
+	color: white;
+	margin: 10px;
+	padding: 10px 25px;
+	
+
+	&:hover {
+	background-color: #188882;	
+	}
+	&:focus{ 
+	outline: none;
+}
+}
+
+[type~=submit] {
+	cursor: pointer; 
+	border: none;
+	background-color: #ae4599;
+	color: white;
+	margin: 10px;
+	padding: 10px 25px;
+
+	&:hover {
+	background-color: #d84488;	
+	}
+
+}
+
+.btn-invert {
+	background-color: #fff;
+	box-sizing: border-box;
+	padding: 10px 25px;
+	border: 2px solid #28a89e;
+	color: #28a89e;
+
+	&:hover {
+	background-color: #28a89e;
+	padding: 10px 25px;
+	border: 2px solid #28a89e;
+	color: #fff;	
+	}
+}

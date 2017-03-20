@@ -1,0 +1,59 @@
+input,
+label {
+	display: block;
+}
+
+[type~=checkbox] {
+	display: inline;
+}
+
+input, 
+textarea, 
+select {
+	color: #000;
+	box-sizing: border-box;
+    border: 2px solid $conversable-violet;
+    padding: 10px;
+    
+} 
+
+option {
+	background-color: $conversable-violet;
+	color: #fff;
+
+	&:hover {
+    	background-color: $conversable-turquoise;
+	}
+}
+
+input, 
+select, 
+textarea:focus{ 
+	outline: none;
+}
+
+/*
+.prueba {
+   border:1px solid $conversable-violet;
+   height:46px;
+   overflow: hidden;
+   width: 250px;
+   position:relative;
+}
+select {
+    width: 250px;
+}
+
+.prueba::after{
+	content:"\025be";
+	padding-top:8px;
+	text-align:center;
+	width: 30px;
+	height:46px;
+	background-color: $conversable-violet;
+	position:absolute;
+	top:0;
+	right:0px;	
+	pointer-events: none;
+}
+*/

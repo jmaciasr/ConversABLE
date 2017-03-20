@@ -1,0 +1,64 @@
+h1 {
+	font: 48px "Oswald", sans-serif;
+}
+
+h2 {
+	font: 36px "Oswald", sans-serif;
+}
+
+h3 {
+	font: 24px "Oswald", sans-serif;
+}
+
+h4 {
+	font: 16px "Oswald", sans-serif;
+}
+
+p {
+	font: 16px "Open Sans", sans-serif;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+a {
+	color: $conversable-salmon;
+	
+	text-decoration: none;
+	
+	&:hover {
+	color: $conversable-violet;
+	border-bottom: 1px solid $conversable-violet;
+	}
+}
+
+a, 
+label {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+button,
+option,
+ol, 
+ul,
+tbody,  
+[type~=submit], 
+select, 
+textarea {
+	font: 16px "Open Sans", sans-serif;
+	font-weight: 300;
+}
+
+textarea {
+	font: 14px "Open Sans", sans-serif;
+	font-weight: 400;
+}
+
+
+ul {
+	list-style-type: square //inside url("../../img/ul_inside.jpg");		
+}
+
+thead {
+	font: 16px "Oswald", sans-serif;
+}

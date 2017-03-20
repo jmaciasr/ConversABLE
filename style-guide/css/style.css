@@ -3,26 +3,39 @@
   padding: 0; }
 
 body {
-  margin: 0 auto;
-  width: 1200px; }
+  margin: 0 auto; }
 
 section {
   margin-bottom: 50px; }
 
+h1,
+h2,
+table,
+ol,
+ul,
+input,
+select,
+textarea {
+  margin-bottom: 20px; }
+
+h3,
+h4 {
+  margin-bottom: 10px; }
+
 h1 {
-  font: 48px 'Oswald', sans-serif; }
+  font: 48px "Oswald", sans-serif; }
 
 h2 {
-  font: 36px 'Oswald', sans-serif; }
+  font: 36px "Oswald", sans-serif; }
 
 h3 {
-  font: 24px 'Oswald', sans-serif; }
+  font: 24px "Oswald", sans-serif; }
 
 h4 {
-  font: 16px 'Oswald', sans-serif; }
+  font: 16px "Oswald", sans-serif; }
 
 p {
-  font: 16px 'Open Sans', sans-serif;
+  font: 16px "Open Sans", sans-serif;
   font-weight: 300;
   margin-bottom: 20px; }
 
@@ -33,25 +46,31 @@ a {
     color: #ae4599;
     border-bottom: 1px solid #ae4599; }
 
-a, label {
-  font-family: 'Open Sans', sans-serif;
+a,
+label {
+  font-family: "Open Sans", sans-serif;
   font-weight: 400; }
 
-h1, h2, table, ol, ul, input, select, textarea {
-  margin-bottom: 20px; }
-
-h3, h4 {
-  margin-bottom: 10px; }
-
-ol, ul, tbody, button, [type~=submit] {
-  font: 16px 'Open Sans', sans-serif;
+button,
+option,
+ol,
+ul,
+tbody,
+[type~=submit],
+select,
+textarea {
+  font: 16px "Open Sans", sans-serif;
   font-weight: 300; }
+
+textarea {
+  font: 14px "Open Sans", sans-serif;
+  font-weight: 400; }
 
 ul {
   list-style-type: square; }
 
 thead {
-  font: 16px 'Oswald', sans-serif; }
+  font: 16px "Oswald", sans-serif; }
 
 td {
   border-bottom: 1px solid #59585a;
@@ -72,6 +91,8 @@ button {
   padding: 10px 25px; }
   button:hover {
     background-color: #188882; }
+  button:focus {
+    outline: none; }
 
 [type~=submit] {
   cursor: pointer;
@@ -95,10 +116,56 @@ button {
     border: 2px solid #28a89e;
     color: #fff; }
 
-label, input {
+input,
+label {
   display: block; }
 
 [type~=checkbox] {
   display: inline; }
+
+input,
+textarea,
+select {
+  color: #000;
+  box-sizing: border-box;
+  border: 2px solid #ae4599;
+  padding: 10px; }
+
+option {
+  background-color: #ae4599;
+  color: #fff; }
+  option:hover {
+    background-color: #28a89e; }
+
+input,
+select,
+textarea:focus {
+  outline: none; }
+
+/*
+.prueba {
+   border:1px solid $conversable-violet;
+   height:46px;
+   overflow: hidden;
+   width: 250px;
+   position:relative;
+}
+select {
+    width: 250px;
+}
+
+.prueba::after{
+	content:"\025be";
+	padding-top:8px;
+	text-align:center;
+	width: 30px;
+	height:46px;
+	background-color: $conversable-violet;
+	position:absolute;
+	top:0;
+	right:0px;	
+	pointer-events: none;
+}
+*/
 
 /*# sourceMappingURL=style.css.map */
