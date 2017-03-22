@@ -1,4 +1,15 @@
+label {
+	color: $conversable-violet;
+	margin-bottom: 5px;
+}
+
+textarea {
+	resize: none;
+}
+
+
 input,
+textarea,
 label {
 	display: block;
 }
@@ -11,8 +22,10 @@ input,
 textarea, 
 select {
 	color: #000;
+	background-color: transparent;
 	box-sizing: border-box;
-    border: 1px solid $conversable-violet;
+	border: none;
+    border-bottom: 1px solid $conversable-gray;
     padding: 10px;
     
 } 
@@ -32,28 +45,20 @@ textarea:focus{
 	outline: none;
 }
 
-/*
-.prueba {
-   border:1px solid $conversable-violet;
-   height:46px;
-   overflow: hidden;
-   width: 250px;
-   position:relative;
-}
-select {
-    width: 250px;
+
+// Placeholder color
+::-webkit-input-placeholder { color: #999; } /* WebKit */
+:-moz-placeholder { color: #999; } /* Firefox 18- */
+::-moz-placeholder { color: #999; } /* Firefox 19+ */
+:-ms-input-placeholder { color: #999; } /* IE 10+ */
+
+// Active input
+input:focus,
+textarea:focus,
+select:focus { 
+    border: 1px solid $conversable-violet;
 }
 
-.prueba::after{
-	content:"\025be";
-	padding-top:8px;
-	text-align:center;
-	width: 30px;
-	height:46px;
-	background-color: $conversable-violet;
-	position:absolute;
-	top:0;
-	right:0px;	
-	pointer-events: none;
+label:focus {
+	color: $conversable-violet; 
 }
-*/
